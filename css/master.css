@@ -1,0 +1,316 @@
+/* generals */
+/* Primary color: deep-purple #7e57c2 */
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: #fff;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+    }
+
+    /* Sections */
+    section {
+      background-color: #fff;
+    }
+    section > .row {
+      margin-bottom: 0px !important;
+    }
+
+    #team a:hover :not(.chip), #contact a:hover, #media a:hover p, #projects a:hover p {
+      color: rgb(102, 102, 255) !important;
+      -webkit-transition: color .5s ease;
+      -o-transition: color .5s ease;
+      transition: color .5s ease;
+      transition-property: color;
+      transition-duration: 0.5s;
+      transition-timing-function: ease;
+      transition-delay: 0s;
+    }
+
+    #startups, #contact, #investors, #team, #faq {
+      background-repeat: repeat;
+      background-image: url("../img/bgPattern.png");
+      transition:width 0.1s;
+       -webkit-transition:width 0.1s; /* Safari and Chrome */
+       -moz-transition:width 0.1s; /* Firefox 4 */
+       -o-transition:width 0.1s; /* Opera */
+       transition:width 0.1s; /* Opera */
+    }
+
+    h5 {
+      font-size: 2.5em;
+      margin: 1em 0em 1em 0em;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+
+
+    /* cards */
+
+    .card, .card-reveal {
+      border-radius: 25px !important;
+    }
+    .card p {
+      font-size: 1.2rem;
+    }
+    .card .calatechIcon {
+      margin: 1rem 1rem 1rem 1rem;
+      font-size: 2.5rem;
+    }
+
+    /* chips */
+    .chip {
+      background-color: rgba(0, 0, 255, 0.3);
+      color: #00f;
+      -webkit-transition: background-color .2s ease;
+      -o-transition: background-color .2s ease;
+      transition: background-color .2s ease;
+      transition-property: background-color;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
+      transition-delay: 0s;
+    }
+
+    .chip:hover {
+      background-color: rgba(0, 0, 255, 0.6);
+    }
+
+    /* Modals */
+    .modal {
+      border-radius: 25px;
+    }
+    .modal {
+
+    }
+
+    /* content */
+
+    .content {
+      min-width: 100vw;
+      min-height: 100vh;
+      width: 100% !important;
+      height: 100% !important;
+    }
+
+    /* Icons */
+
+    .calatechIcon {
+      margin: 1rem 1rem 1rem 1rem;
+      font-size: 2em;
+    }
+
+    li span {
+      display: block;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    .verticalCenter {
+      position: relative;
+      top: 20vh;
+    }
+
+    /* Buttons */
+
+    .btn, .btn-large, .btn-small, .btn-flat {
+      border-radius: 25px !important;
+    }
+
+/* welcome */
+
+    /* Background Video and color */
+    #welcome {
+      background-color: rgba(255, 255, 255, 0.95);
+    }
+    #bgvid {
+      position: fixed;
+      z-index: -100;
+      top: auto;
+      left: 50%;
+      -ms-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      min-width: 100vw;
+      min-height: 100vh;
+    }
+
+    /* navbar */
+
+    #welcome p, #welcome h5 {
+      color: #7e57c2;
+    }
+
+    #welcome nav {
+      background-color: rgba(255, 255, 255, 0) !important;
+      box-shadow: none !important;
+      padding: 0em 1rem 0rem 1rem;
+    }
+
+    #welcome .mainLogo {
+      height: 10em;
+    }
+
+    #welcome nav .mainLogo {
+      filter: grayscale(100%) invert(100%) brightness(10);
+      height: 1em;
+    }
+
+    #welcome .navbarLogo {
+      margin-top: 0.8rem;
+      height: 2rem;
+    }
+
+    #welcome .navbarLogoLi {
+      background-color: #7e57c2;
+    }
+
+     /* for navbarScroll */
+
+    #welcome .nav-up {
+      transform: translateY(-150%) !important;
+      }
+
+    #welcome .sidenav-trigger {
+      background-color: #7e57c2;
+      border-radius: 100%;
+      position: fixed !important;
+      height: 56px !important;
+      z-index: 997 !important;
+      margin: 20px !important;
+    }
+
+/* Team */
+
+    #team .card .card-image img {
+      display: block;
+      border-radius: 50%;
+      position: relative;
+      left: 5%;
+      right: 0;
+      bottom: -5%;
+      width: 90%;
+      margin-top: 5%;
+    }
+    #team p {
+      text-align: left !important;
+    }
+
+    #team .options {
+      position: absolute !important;
+      right: 1em !important;
+      top: 1em !important;
+    }
+
+/* Startup */
+
+    #startups {
+      background-color: #e8eaf6;
+    }
+
+    #startups ul li, #investors ul li {
+      margin-top: 5em;
+    }
+
+
+/*Contact*/
+
+    #contact {
+      background-color: #e8eaf6;
+    }
+    #contact .card-content {
+      padding: 24px 24px 4px 24px;
+    }
+    #contact .card-content .row {
+      margin-bottom: 10px;
+    }
+    #contact .socialIcon {
+      font-size: 3rem;
+      margin-left: 3rem;
+    }
+
+/* Media */
+
+    #media {
+      background-color: #e8eaf6;
+    }
+    #media p, #projects p {
+      font-size: 1rem;
+      color: #616161 !important;
+    }
+    #media .col {
+      margin-bottom: 30px;
+    }
+
+    #media .mediaLogo {
+      width: 50%;
+      filter: grayscale(100%);
+    }
+
+/* FAQ */
+
+    #faq .collapsible-header {
+      color: #424242;
+      font-weight:900;
+    }
+    #faq .collapsible-body span {
+      text-align: left;
+    }
+
+/* projects */
+
+    #projects img {
+      width: 60%;
+      margin: 3em 0 0 0;
+    }
+
+/* Footer */
+
+    footer .mainLogo {
+      filter: grayscale(100%) invert(100%) brightness(10);
+      height: 2.5em;
+      position: relative;
+      margin-bottom: 1em;
+      bottom: -0.5em;
+    }
+
+    footer li {
+      display: inline-block;
+      margin-left: 1em;
+    }
+
+    .page-footer {
+      background-color: #7e57c2;
+    }
+
+    footer a {
+      color: rgba(255, 255, 255, 0.8);
+      -webkit-transition: color .3s ease;
+      -o-transition: color .3s ease;
+      transition: color .3s ease;
+      transition-property: color;
+      transition-duration: 0.3s;
+      transition-timing-function: ease;
+      transition-delay: 0s;
+    }
+
+    footer .footer-copyright {
+      background-color: rgba(255, 255, 255, 0.1) !important;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    footer {
+      z-index: -5;
+    }
+
+    footer .calatechIcon {
+      margin: 0 0 0 0 !important;
+      font-size: 2.5rem !important;
+    }
