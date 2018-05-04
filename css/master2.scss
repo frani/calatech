@@ -1,6 +1,8 @@
 /* generals */
 /* Primary color: deep-purple #7e57c2 */
-/* Secundary Color: indigo #e8eaf6 */
+/* Secundary Color: indigo lighten-5 #e8eaf6 */
+$primary-color: #7e57c2;
+$secundary-color: #e8eaf6;
 
     body {
       font-family: 'Montserrat', sans-serif;
@@ -10,10 +12,6 @@
       -ms-user-select: none;
       -o-user-select: none;
       user-select: none;
-    }
-
-    .responsive-img{
-      max-width: 90% !important;
     }
 
     /* Sections */
@@ -45,10 +43,6 @@
        transition:width 0.1s; /* Opera */
     }
 
-    h3 {
-      font-size: 1.3em;
-    }
-
     h5 {
       font-size: 2.5em;
       margin: 1em 0em 1em 0em;
@@ -61,8 +55,7 @@
     /* cards */
 
     .card, .card-reveal {
-      border: 3px solid rgba(126, 87, 194, 1);
-      border-radius: 0px !important;
+      border-radius: 25px !important;
     }
     .card p {
       font-size: 1.2rem;
@@ -74,10 +67,8 @@
 
     /* chips */
     .chip {
-      background-color: rgba(126, 87, 194, 0.5);
-      color: #eee;
-      border: 3px solid rgba(126, 87, 194, 0.3);
-      border-radius: 0px !important;
+      background-color: rgba(0, 0, 255, 0.3);
+      color: #00f;
       -webkit-transition: background-color .2s ease;
       -o-transition: background-color .2s ease;
       transition: background-color .2s ease;
@@ -87,10 +78,16 @@
       transition-delay: 0s;
     }
 
+    .chip:hover {
+      background-color: rgba(0, 0, 255, 0.6);
+    }
+
     /* Modals */
     .modal {
-      border: 3px solid rgba(126, 87, 194, 0.5);
-      border-radius: 0px !important;
+      border-radius: 25px;
+    }
+    .modal {
+
     }
 
     /* content */
@@ -122,12 +119,8 @@
 
     /* Buttons */
 
-    .btn, .btn-large:not(footer), .btn-small :not(nav) :not(footer){
-      border: 3px solid rgba(126, 87, 194, 0.5);
-      border-radius: 0px !important;
-    }
-     #joinus .btn-large {
-      margin-top: 5em;
+    .btn, .btn-large, .btn-small, .btn-flat {
+      border-radius: 25px !important;
     }
 
 /* welcome */
@@ -145,14 +138,14 @@
       -moz-transform: translateX(-50%);
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%);
-      filter: blur(1px);
+      filter: blur(2px);
       width: 150vw;
     }
 
     /* navbar */
 
     #welcome p, #welcome h5 {
-      color: #7e57c2;
+      color: $primary-color;;
     }
 
     #welcome nav {
@@ -176,7 +169,7 @@
     }
 
     #welcome .navbarLogoLi {
-      background-color: #7e57c2;
+      background-color: $primary-color;;
     }
 
      /* for navbarScroll */
@@ -186,7 +179,7 @@
       }
 
     #welcome .sidenav-trigger {
-      background-color: #7e57c2;
+      background-color: $primary-color;;
       border-radius: 100%;
       position: fixed !important;
       height: 56px !important;
@@ -194,63 +187,17 @@
       margin: 20px !important;
     }
 
-/* projects */
-
-    #projects {
-      background-color: #e8eaf6;
-    }
-    #projects .containerBody {
-      padding: 10vh 0 10vh 0;
-
-    }
-
-    #projects img {
-      width: 50%;
-      margin: 3em 0 0 0;
-    }
-
-    #projects a {
-      -webkit-filter: grayscale(100%);
-      -o-filter: grayscale(100%);
-      filter: grayscale(100%);
-      -webkit-transition: ease 1s;
-      -o-transition: ease 1s;
-      transition: ease 1s;
-    }
-
-    #projects a:hover {
-      -webkit-filter: grayscale(0%);
-      -o-filter: grayscale(0%);
-      filter: grayscale(0%);
-      -webkit-transition: ease 1s;
-      -o-transition: ease 1s;
-      transition: ease 1s;
-    }
-
 /* Team */
 
-    #team img {
-      cursor: pointer;
+    #team .card .card-image img {
       display: block;
-      border: 3px solid rgba(126, 87, 194, 0.9);
-      border-radius: 0px !important;
+      border-radius: 50%;
       position: relative;
       left: 5%;
       right: 0;
       bottom: -5%;
       width: 90%;
       margin-top: 5%;
-      -webkit-transition: ease 0.5s;
-      -o-transition: ease 0.5s;
-      transition: ease 0.5s;
-    }
-    #team img:hover {
-      -webkit-filter: brightness(110%);
-      -o-filter: brightness(110%);
-      filter: brightness(110%);
-      -webkit-transition: ease 0.5s;
-      -o-transition: ease 0.5s;
-      transition: ease 0.5s;
     }
     #team p {
       text-align: left !important;
@@ -262,33 +209,21 @@
       top: 1em !important;
     }
 
-/* Conexions */
+/* Startup */
 
-    #conexions {
-      background-color: #e8eaf6;
+    #startups {
+      background-color: $secundary-color;;
     }
 
-    #conexions img {
-      width: 60%;
-      margin: 3em 0 0 0;
-      -webkit-transition: ease 0.5s;
-      -o-transition: ease 0.5s;
-      transition: ease 0.5s;
-    }
-    #conexions a:hover{
-      -webkit-filter: brightness(120%);
-      -o-filter: brightness(120%);
-      filter: brightness(120%);
-      -webkit-transition: ease 0.5s;
-      -o-transition: ease 0.5s;
-      transition: ease 0.5s;
+    #startups ul li, #investors ul li {
+      margin-top: 5em;
     }
 
 
 /*Contact*/
 
     #contact {
-      background-color: #e8eaf6;
+      background-color: $secundary-color;;
     }
     #contact .card-content {
       padding: 24px 24px 4px 24px;
@@ -301,11 +236,46 @@
       margin-left: 3rem;
     }
 
+/* Media */
+
+    #media {
+      background-color: $primary-color;;
+    }
+    #media p, #projects p {
+      font-size: 1rem;
+      color: #616161 !important;
+    }
+    #media .col {
+      margin-bottom: 30px;
+    }
+
+    #media .mediaLogo {
+      width: 50%;
+      filter: grayscale(100%);
+    }
+
+/* FAQ */
+
+    #faq .collapsible-header {
+      color: #424242;
+      font-weight:900;
+    }
+    #faq .collapsible-body span {
+      text-align: left;
+    }
+
+/* projects */
+
+    #projects img {
+      width: 60%;
+      margin: 3em 0 0 0;
+    }
+
 /* Footer */
 
     footer .mainLogo {
       filter: grayscale(100%) invert(100%) brightness(10);
-      height: 5em;
+      height: 2.5em;
       position: relative;
       margin-bottom: 1em;
       bottom: -0.5em;
@@ -317,7 +287,7 @@
     }
 
     .page-footer {
-      background-color: #7e57c2;
+      background-color: $primary-color;;
     }
 
     footer a {
