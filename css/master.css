@@ -3,7 +3,7 @@
 /* Secundary Color: indigo #e8eaf6 */
 
     body {
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Josefin Sans', sans-serif;
       color: #fff;
       -webkit-user-select: none;
       -moz-user-select: none;
@@ -46,15 +46,17 @@
     }
 
     h3 {
-      font-size: 1.3em;
+      font-size: 2rem;
+      font-weight: 600;
     }
 
     h5 {
-      font-size: 2.5em;
+      font-size: 2.5rem;
       margin: 1em 0em 1em 0em;
+      font-weight: 600;
     }
     p {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
     }
 
 
