@@ -91,8 +91,11 @@
 
     /* Modals */
     .modal {
-      border: 3px solid rgba(126, 87, 194, 0.5);
+      border: 3px solid rgba(126, 87, 194, 1);
       border-radius: 0px !important;
+    }
+    .modal p {
+      text-align: left;
     }
 
     /* content */
